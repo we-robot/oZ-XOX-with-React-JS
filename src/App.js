@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Square from './components/Square'
 
 class App extends Component {
+  comment = {
+    date: new Date(),
+    text: 'I hope you enjoy learning React!'
+  };
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="satir">
+          <Square></Square>
+          <Square></Square>
+          <Square></Square>
+        </div>
+        <div className="satir">
+          <Square></Square>
+          <Square></Square>
+          <Square></Square>
+        </div>
+        <div className="satir">
+          <Square></Square>
+          <Square></Square>
+          <Square></Square>
+        </div>
       </div>
     );
   }
